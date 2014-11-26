@@ -2,7 +2,7 @@ load 'ar.rb'
 
 access_log_entry_array = Array.new
 
-File.open("access.log", "r") do |f|
+File.open("access_one.log", "r") do |f|
   f.each_line do |line|
     my_string_array = line.scan(/"[^"]+"|\[[^\[\]]+\]|\S+/).map { |word| word.delete('"') }
     access_log_entry_array << my_string_array
