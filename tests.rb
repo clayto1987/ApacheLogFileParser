@@ -1,3 +1,4 @@
+#IGNORE THIS FILE - this contains testing code content
 # load 'ar.rb'
 #
 # new_log_entry = LogEntry.new

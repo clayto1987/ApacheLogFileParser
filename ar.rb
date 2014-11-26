@@ -14,6 +14,8 @@ ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => 'db/
 # Uncomment this line to make the logger output look nicer in Windows.
 # ActiveSupport::LogSubscriber.colorize_logging = false
 
+#Defines the database schema and creates the table if it doesn't exist
+#The database schema is based on the Apache combined log format
 ActiveRecord::Schema.define do
   unless ActiveRecord::Base.connection.tables.include? 'log_entries'
     create_table :log_entries do |table|
